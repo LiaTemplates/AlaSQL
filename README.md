@@ -18,7 +18,7 @@ script:   https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.11/alasql-worker.min
 
 script:  https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.1/papaparse.min.js
 
-@eval
+@alasql.eval
 <script>
 try {
   JSON.stringify(alasql(`@input`), null, 3);
@@ -34,7 +34,7 @@ try {
 @end
 
 
-@eval_with_csv
+@alasql.eval_with_csv
 <script>
 let data = Papa.parse(`@input(1)`, {header: true});
 
@@ -87,7 +87,7 @@ INSERT INTO test VALUES (3,'Bonjour!');
 
 SELECT * FROM test WHERE language > 1;
 ```
-@eval
+@alasql.eval
 
 
 
@@ -97,7 +97,7 @@ select some stuff
 */
 SELECT * FROM test WHERE language > 1;
 ```
-@eval
+@alasql.eval
 
 
 ## Reading CSV data
@@ -212,7 +212,7 @@ Sub-Saharan Africa,Niger,Clothes,Online,M,9/2/2015,835054767,10/9/2015,117,109.2
 Sub-Saharan Africa,Gabon,Household,Offline,C,11/11/2013,167161977,12/24/2013,5798,668.27,502.54,3874629.46,2913726.92,960902.54
 Australia and Oceania,East Timor,Vegetables,Offline,C,8/4/2014,633895957,8/22/2014,2755,154.06,90.93,424435.30,250512.15,173923.15
 ```
-@eval_with_csv
+@alasql.eval_with_csv
 
 ``` sql
 /*
@@ -220,13 +220,10 @@ select some stuff
 */
 SELECT Region FROM one;
 ```
-@eval
+@alasql.eval
 
 
 ``` sql
 SELECT * FROM one Where Region == "North America";
 ```
-@eval
-
-
-
+@alasql.eval
