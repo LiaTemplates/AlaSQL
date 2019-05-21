@@ -3,7 +3,7 @@ author:   André Dietrich
 
 email:    andre.dietrich@ovgu.de
 
-version:  0.1.0
+version:  0.2.0
 
 language: en
 
@@ -57,18 +57,18 @@ try {
 
 -->
 
-# AlaSQL Template
+# AlaSQL - Template
 
 This is a template for developing interactive SQL courses with LiaScript and
 [AlaSQL](http://alasql.org).
 
 __Try it on LiaScript:__
 
-https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/alasql_template/master/README.md
+https://liascript.github.io/course/?https://raw.githubusercontent.com/liaTemplates/AlaSQL/master/README.md
 
 __See the project on Github:__
 
-https://github.com/liaScript/alasql_template
+https://github.com/liaTemplates/AlaSQL
 
 
                          --{{1}}--
@@ -82,7 +82,7 @@ it, as you wish.
                            {{1}}
 1. Load the macros via
 
-   `import: https://raw.githubusercontent.com/liaScript/alasql_template/master/README.md`
+   `import: https://raw.githubusercontent.com/liaTemplates/AlaSQL/master/README.md`
 
 2. Copy the definitions into your Project
 
@@ -243,7 +243,7 @@ If you want to minimize loading effort in your LiaScript project, you can also
 copy this code and paste it into your main comment header, see the code in the
 raw file of this document.
 
-{{1}} https://raw.githubusercontent.com/liaScript/alasql_template/master/README.md
+{{1}} https://raw.githubusercontent.com/liaTemplates/AlaSQL/master/README.md
 
 
 ## More Information
