@@ -3,7 +3,7 @@ author:   André Dietrich
 
 email:    andre.dietrich@ovgu.de
 
-version:  0.2.0
+version:  0.2.1
 
 language: en
 
@@ -14,8 +14,17 @@ comment:  Macros for execute SQL code snippets with AlaSQL.
 script:   https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.11/alasql-worker.min.js
           https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.11/alasql.min.js
 
+attribute: [AlaSQL](https://alasql.org)
+           by [Andrey Gershun](agershun@gmail.com)
+           & [Mathias Rangel Wulff](m@rawu.dk)
+           is licensed under [MIT](https://opensource.org/licenses/MIT)
+
 
 script:  https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.1/papaparse.min.js
+
+attribute: [PapaParse](https://www.papaparse.com)
+           by [Matthew Holt](https://twitter.com/mholt6)
+           is licensed under [MIT](https://opensource.org/licenses/MIT)
 
 @AlaSQL.eval
 <script>
