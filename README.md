@@ -3,13 +3,15 @@ author:   André Dietrich
 
 email:    andre.dietrich@ovgu.de
 
-version:  0.2.1
+version:  0.2.2
 
 language: en
 
 narrator: US English Female
 
-comment:  Macros for execute SQL code snippets with AlaSQL.
+logo:     https://jquery-plugins.net/image/plugin/alasql-javascript-sql-database-library.png
+
+comment:  Macros for executing SQL code snippets with AlaSQL in LiaScript.
 
 script:   https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.11/alasql-worker.min.js
           https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.11/alasql.min.js
