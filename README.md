@@ -3,7 +3,7 @@ author:   André Dietrich
 
 email:    andre.dietrich@ovgu.de
 
-version:  0.2.2
+version:  0.2.3
 
 language: en
 
@@ -13,8 +13,7 @@ logo:     https://jquery-plugins.net/image/plugin/alasql-javascript-sql-database
 
 comment:  Macros for executing SQL code snippets with AlaSQL in LiaScript.
 
-script:   https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.11/alasql-worker.min.js
-          https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.11/alasql.min.js
+script:   https://cdn.jsdelivr.net/npm/alasql@0.6.5/dist/alasql.min.js
 
 attribute: [AlaSQL](https://alasql.org)
            by [Andrey Gershun](agershun@gmail.com)
@@ -31,15 +30,22 @@ attribute: [PapaParse](https://www.papaparse.com)
 @AlaSQL.eval
 <script>
 try {
+
   JSON.stringify(alasql(`@input`), null, 3);
+
+
+
+
 } catch(e) {
   let error = new LiaError(e.message, 1);
   try {
     let log = e.message.match(/.*line (\d):.*\n.*\n.*\n(.*)/);
     error.add_detail(0, e.name+": "+log[2], "error", log[1] -1 , 0);
-  } catch(e) {}
-  throw error ;
+  } catch(e) {
+  }
+  throw error;
 }
+
 </script>
 @end
 
